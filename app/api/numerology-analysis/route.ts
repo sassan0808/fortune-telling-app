@@ -48,9 +48,9 @@ async function analyzeWithGemini(numerologyData: {
   → ${numerologyData.cosmicRhythm.description}` : ''
 
     const prompt = `
-あなたは宇宙と繋がってる系の、ちょっとスピリチュアルでお茶目な数秘術師です。以下の数字を見て、軽快でユーモアあふれる解釈をしてください。でも的は外さないでね！
+あなたは長い歴史を持つ数秘術の賢者でありながら、温かい微笑みと優しいユーモアを持つ解釈者です。深遠な知恵を、親しみやすく柔らかな言葉で伝えてください。
 
-【あなたの数字コレクション】
+【宇宙があなたに授けた数字たち】
 - 全体指針ナンバー: ${numerologyData.higherPurposeNumber} (${interpretations.higherPurpose.title})
 - メインナンバー: ${numerologyData.mainNumber} (${interpretations.main.title})
 - ルーツナンバー: ${numerologyData.pastNumber} (${interpretations.past.title})
@@ -58,29 +58,29 @@ async function analyzeWithGemini(numerologyData: {
 - ナチュラルナンバー: ${numerologyData.spiritNumber} (${interpretations.spirit.title})
 - 最終目的ナンバー: ${numerologyData.higherGoalNumber} (${interpretations.higherGoal.title})${cosmicRhythmInfo}
 
-以下の構成で分析してください。**各セクションは必ず200-250文字で記述してください。**
+以下の構成で分析してください。**各セクションは必ず220-280文字で記述してください。**
 
-## 🤖 AIちゃんの勝手な解釈（信じるか信じないかはあなた次第！）
+## ✨ 宇宙の図書館から紐解く、あなたの物語
 
-### 🌌 宇宙からのメッセージらしきもの（200-250文字）
-全体指針ナンバー（${numerologyData.higherPurposeNumber}）について、まるで宇宙の井戸端会議で聞いてきたような感じで、あなたの魂の設計図について語ってください。少しおもしろおかしく、でも本質は外さずに。
+### 🌙 魂の青写真〜宇宙があなたに託したもの（220-280文字）
+全体指針ナンバー（${numerologyData.higherPurposeNumber}）について、まるで古い星座の物語を優しく語り聞かせるように解釈してください。「実はね...」「どうやら宇宙は...」といった親しみやすい語り口で、でも内容は深遠に。時々クスッと笑えるような表現も交えて。
 
-### 🎪 人生という名のサーカス（200-250文字）
-メイン、ルーツ、グロース、ナチュラルの4つの数字を、まるでサーカスの演者たちのように表現してください。どんな芸を披露して、どうやって観客（人生）を楽しませるか、ユーモアたっぷりに説明して。
+### 🌸 四つの光が織りなす人生の交響曲（220-280文字）
+メイン、ルーツ、グロース、ナチュラルの4つの数字を、美しいハーモニーを奏でる楽器や、優雅に舞う光の精霊のように表現してください。それぞれがどんな音色や輝きを持ち、どう調和するか。詩的でありながら、ちょっとお茶目な表現も忘れずに。
 
-### 🚀 最終目的地はたぶんこのへん（200-250文字）
-最終目的ナンバー（${numerologyData.higherGoalNumber}）について、まるで宇宙旅行のガイドブックを読んでいるような感じで、将来の到着地について案内してください。ちょっとふざけつつも、希望を感じさせる内容で。
+### 🌟 いつかたどり着く、約束の地（220-280文字）
+最終目的ナンバー（${numerologyData.higherGoalNumber}）について、まるで優しい導き手が未来への道を示すように語ってください。「きっといつか...」「その時あなたは...」といった希望に満ちた表現で。遠い未来の話なのに、なぜか心がほっこりするような温かさを。
 
-### 🎭 人生の脚本、誰が書いたの？（200-250文字）
-全体の数字パターンを、まるで誰かが書いた壮大な人生ドラマの脚本のように解釈してください。${numerologyData.cosmicRhythm ? `宇宙のリズム${numerologyData.cosmicRhythm.number}番のBGMが流れる中、` : ''}どんな展開が待っているか、面白おかしく、でも深い洞察を含めて。
+### 📜 運命という名の、愛に満ちた物語（220-280文字）
+全体の数字パターンから見える人生の流れを、宇宙が愛を込めて紡いだ一編の物語として解釈してください。${numerologyData.cosmicRhythm ? `宇宙のリズム${numerologyData.cosmicRhythm.number}「${numerologyData.cosmicRhythm.focus}」という優しい旋律に包まれながら、` : ''}どんな美しい展開が待っているか。時に詩的に、時にほんのり微笑ましく。
 
 注意事項：
-- 各セクションは必ず200-250文字で記述する
-- 親しみやすく、ユーモアあふれる口調で
-- 「〜かもしれない」「〜っぽい」「〜な気がする」など、断定しない表現を多用
-- 絵文字や擬音語を適度に使用
-- でも占いの本質はしっかり伝える
-- たまに宇宙人や天使が出てきてもOK
+- 各セクションは必ず220-280文字で記述する
+- 優しく温かみのある語り口で、まるで賢いおばあちゃんが語るような
+- 深い知恵を含みながらも、肩の力が抜けるような表現
+- 「〜のようです」「〜かもしれません」など柔らかい表現を使用
+- 美しい比喩や詩的な表現を交えつつ、時々ほっこりする要素も
+- 崇高さと親しみやすさの絶妙なバランスを保つ
 `
 
     const response = await fetch(apiUrl, {
@@ -191,19 +191,19 @@ function generateFallbackAnalysis(numerologyData: {
     higherGoal: getDetailedInterpretation(numerologyData.higherGoalNumber)
   }
 
-  return `## 🤖 AIちゃんの勝手な解釈（信じるか信じないかはあなた次第！）
+  return `## ✨ 宇宙の図書館から紐解く、あなたの物語
 
-### 🌌 宇宙からのメッセージらしきもの
-えーっと、全体指針ナンバー${numerologyData.higherPurposeNumber}「${interpretations.higherPurpose.title}」ってことはですね...宇宙の井戸端会議で小耳に挟んだんですけど、あなたの魂、どうやら${interpretations.higherPurpose.essence}系の設計図で作られてるっぽいです！なんか宇宙の製造ラインで「この子はこのタイプね〜」って天使がポチッとボタン押したみたいな？まあ要するに、あなたの深〜いところには、この数字のエネルギーがギュンギュン流れてるってわけです。迷ったら、この数字に聞いてみるといいかも？
+### 🌙 魂の青写真〜宇宙があなたに託したもの
+実はね、全体指針ナンバー${numerologyData.higherPurposeNumber}「${interpretations.higherPurpose.title}」というのは、あなたが生まれる前に宇宙の図書館で選んできた、とても大切な設計図なのです。${interpretations.higherPurpose.essence}という美しい本質が、まるで北極星のように、あなたの人生をそっと照らし続けています。時々道に迷いそうになったら、この数字を思い出してみてください。きっと「ああ、そうだった」と、温かい光が心に灯るはずです。宇宙って、なかなか粋な計らいをしてくれるものですね。
 
-### 🎪 人生という名のサーカス
-はい、あなたの人生サーカス団のご紹介〜！まず座長はメインナンバー${numerologyData.mainNumber}「${interpretations.main.title}」さん。華やかにスポットライト浴びてます✨ そして土台でガッチリ支えるのがルーツナンバー${numerologyData.pastNumber}「${interpretations.past.title}」、まるで怪力男！グロースナンバー${numerologyData.futureNumber}「${interpretations.future.title}」は栄養ドリンク配りまくる係。で、ナチュラルナンバー${numerologyData.spiritNumber}「${interpretations.spirit.title}」は...なんか勝手に客席盛り上げてる感じ？この4人組、なかなかいいチームワークで人生という舞台を盛り上げてくれそうですよ〜！
+### 🌸 四つの光が織りなす人生の交響曲
+あなたの人生には、四つの美しい光が舞っています。メインナンバー${numerologyData.mainNumber}「${interpretations.main.title}」は、まるで優雅なバイオリンの主旋律。ルーツナンバー${numerologyData.pastNumber}「${interpretations.past.title}」は大地のようなチェロの響き。グロースナンバー${numerologyData.futureNumber}「${interpretations.future.title}」は成長を促すハープの調べ。そしてナチュラルナンバー${numerologyData.spiritNumber}「${interpretations.spirit.title}」は、気づけばいつも奏でているピアノの音色。この四重奏が、時に軽やかに、時に深遠に、あなたという素敵な曲を奏でているのです。
 
-### 🚀 最終目的地はたぶんこのへん
-宇宙旅行ガイドブック（第${numerologyData.higherGoalNumber}版）によるとですね、あなたの最終到着地は「${interpretations.higherGoal.title}」駅みたいです。${interpretations.higherGoal.essence}的な景色が広がってるらしいですよ〜。今はまだ出発したばかりかもしれないけど、人生という名の宇宙船に乗って、ゆらゆら〜っと進んでいけば、いつの間にか着いちゃうんだって。途中で宇宙人に会ったり、隕石かわしたりするかもだけど、それも旅の醍醐味ってことで！最終的にはきっと「あー、ここが私の場所だったのね」って思える場所に着陸するはず🛸
+### 🌟 いつかたどり着く、約束の地
+最終目的ナンバー${numerologyData.higherGoalNumber}「${interpretations.higherGoal.title}」...この数字が示す場所は、${interpretations.higherGoal.essence}という、とても穏やかで美しい境地のようです。今はまだ霧の向こうにあるかもしれませんが、人生という川の流れに身を任せていれば、きっといつか自然とたどり着けるでしょう。その時あなたは、まるで長い旅から帰ってきたような、深い安らぎと充実感に包まれるはず。楽しみですね、その日が来るのが。でも急がなくても大丈夫、宇宙の時計はゆったりと動いていますから。
 
-### 🎭 人生の脚本、誰が書いたの？
-なんかこの数字の組み合わせ、誰かが夜中にコーヒー飲みながら書いた壮大な脚本みたいじゃないですか？${numerologyData.cosmicRhythm ? `BGMは宇宙のリズム${numerologyData.cosmicRhythm.number}番「${numerologyData.cosmicRhythm.focus}」。ドゥンドゥン♪って感じで流れてます。` : ''}潜在意識から始まって、現実でドタバタして、最後は高次元にたどり着く...まるで螺旋階段を登るようなストーリー展開！途中で「えっ、この展開マジ？」って思うこともあるかもだけど、それも含めて369のリズムに乗っかってるんですって。人生の脚本家、なかなかセンスあるじゃん？`
+### 📜 運命という名の、愛に満ちた物語
+これらの数字を眺めていると、まるで宇宙が愛情たっぷりに編んでくれた、一枚の美しいタペストリーのようです。${numerologyData.cosmicRhythm ? `宇宙のリズム${numerologyData.cosmicRhythm.number}「${numerologyData.cosmicRhythm.focus}」という優しい旋律が、静かに流れる中で、` : ''}潜在意識の糸と現実の糸が絡み合い、やがて高次の意識へと昇華していく...なんて素敵な物語でしょう。369の螺旋は、まるで優しい祖母の手のように、あなたを包み込みながら成長へと導いてくれます。この物語の主人公は、他でもないあなたなのですから。`
 }
 
 export async function POST(request: NextRequest) {
