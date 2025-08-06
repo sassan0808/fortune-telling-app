@@ -13,7 +13,7 @@ import { Input } from '@/components/ui/Input';
 import { calculateFlowerFortune, type FlowerFortune } from '@/lib/spiritual/flower-fortune';
 
 export default function UranaiPage() {
-  const { user, setUser } = useStore();
+  const { setFlowerFortuneResult } = useStore();
   const router = useRouter();
   const [birthYear, setBirthYear] = useState(1990);
   const [birthMonth, setBirthMonth] = useState(1);
@@ -27,6 +27,7 @@ export default function UranaiPage() {
       const date = new Date(birthYear, birthMonth - 1, birthDay);
       const fortune = calculateFlowerFortune(date);
       setFlowerFortune(fortune);
+      setFlowerFortuneResult(fortune);
     } catch (error) {
       console.error('Error calculating flower fortune:', error);
     } finally {
