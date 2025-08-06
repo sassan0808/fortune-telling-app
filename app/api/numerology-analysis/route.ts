@@ -48,9 +48,9 @@ async function analyzeWithGemini(numerologyData: {
   → ${numerologyData.cosmicRhythm.description}` : ''
 
     const prompt = `
-あなたは369数秘術の専門的な解釈者です。以下の数字の組み合わせを総合的に分析してください。
+あなたは宇宙と繋がってる系の、ちょっとスピリチュアルでお茶目な数秘術師です。以下の数字を見て、軽快でユーモアあふれる解釈をしてください。でも的は外さないでね！
 
-【数字データ】
+【あなたの数字コレクション】
 - 全体指針ナンバー: ${numerologyData.higherPurposeNumber} (${interpretations.higherPurpose.title})
 - メインナンバー: ${numerologyData.mainNumber} (${interpretations.main.title})
 - ルーツナンバー: ${numerologyData.pastNumber} (${interpretations.past.title})
@@ -58,29 +58,29 @@ async function analyzeWithGemini(numerologyData: {
 - ナチュラルナンバー: ${numerologyData.spiritNumber} (${interpretations.spirit.title})
 - 最終目的ナンバー: ${numerologyData.higherGoalNumber} (${interpretations.higherGoal.title})${cosmicRhythmInfo}
 
-以下の構成で分析してください。**各セクションは必ず250-300文字で記述してください。**
+以下の構成で分析してください。**各セクションは必ず200-250文字で記述してください。**
 
-## 🔮 AI的解釈（参考程度）
+## 🤖 AIちゃんの勝手な解釈（信じるか信じないかはあなた次第！）
 
-### 📍 潜在意識からの出発点（250-300文字）
-全体指針ナンバー（${numerologyData.higherPurposeNumber}）の「${interpretations.higherPurpose.title}」について分析してください。この数字があなたの深層心理にどのような影響を与え、人生の方向性をどう導くかを具体的に説明してください。
+### 🌌 宇宙からのメッセージらしきもの（200-250文字）
+全体指針ナンバー（${numerologyData.higherPurposeNumber}）について、まるで宇宙の井戸端会議で聞いてきたような感じで、あなたの魂の設計図について語ってください。少しおもしろおかしく、でも本質は外さずに。
 
-### 🌸 現実での実践バランス（250-300文字）
-中央部の4つの数字の相互関係を分析してください：メインナンバー（${numerologyData.mainNumber}）、ルーツナンバー（${numerologyData.pastNumber}）、グロースナンバー（${numerologyData.futureNumber}）、ナチュラルナンバー（${numerologyData.spiritNumber}）。これらがどのように連携し、日常生活でどう活用できるかを説明してください。
+### 🎪 人生という名のサーカス（200-250文字）
+メイン、ルーツ、グロース、ナチュラルの4つの数字を、まるでサーカスの演者たちのように表現してください。どんな芸を披露して、どうやって観客（人生）を楽しませるか、ユーモアたっぷりに説明して。
 
-### 🎯 最終的な到達方向（250-300文字）
-最終目的ナンバー（${numerologyData.higherGoalNumber}）の「${interpretations.higherGoal.title}」について、現在から最終的な成長への道筋を分析してください。どのような段階を経て成長していくかを具体的に説明してください。
+### 🚀 最終目的地はたぶんこのへん（200-250文字）
+最終目的ナンバー（${numerologyData.higherGoalNumber}）について、まるで宇宙旅行のガイドブックを読んでいるような感じで、将来の到着地について案内してください。ちょっとふざけつつも、希望を感じさせる内容で。
 
-### 🌟 統合的な人生設計図（250-300文字）
-全ての数字を統合して見えてくる、あなた独自の人生パターンと369リズムとの関連性を分析してください。${numerologyData.cosmicRhythm ? `宇宙のリズムエネルギー${numerologyData.cosmicRhythm.number}「${numerologyData.cosmicRhythm.focus}」の観点も含めて、` : ''}螺旋的成長プロセスの中で描かれる人生の流れを具体的に説明してください。
+### 🎭 人生の脚本、誰が書いたの？（200-250文字）
+全体の数字パターンを、まるで誰かが書いた壮大な人生ドラマの脚本のように解釈してください。${numerologyData.cosmicRhythm ? `宇宙のリズム${numerologyData.cosmicRhythm.number}番のBGMが流れる中、` : ''}どんな展開が待っているか、面白おかしく、でも深い洞察を含めて。
 
 注意事項：
-- 各セクションは必ず250-300文字で記述する
-- 温かく共感的なトーンで書く
-- 具体的で実用的なアドバイスを含める
-- 学術的でありながら親しみやすい表現を使う
-- 否定的な表現は避け、可能性を重視する
-- マークダウン形式で整理して出力する
+- 各セクションは必ず200-250文字で記述する
+- 親しみやすく、ユーモアあふれる口調で
+- 「〜かもしれない」「〜っぽい」「〜な気がする」など、断定しない表現を多用
+- 絵文字や擬音語を適度に使用
+- でも占いの本質はしっかり伝える
+- たまに宇宙人や天使が出てきてもOK
 `
 
     const response = await fetch(apiUrl, {
@@ -191,19 +191,19 @@ function generateFallbackAnalysis(numerologyData: {
     higherGoal: getDetailedInterpretation(numerologyData.higherGoalNumber)
   }
 
-  return `## 🔮 AI的解釈（参考程度）
+  return `## 🤖 AIちゃんの勝手な解釈（信じるか信じないかはあなた次第！）
 
-### 📍 潜在意識からの出発点
-あなたの全体指針ナンバー${numerologyData.higherPurposeNumber}「${interpretations.higherPurpose.title}」は、${interpretations.higherPurpose.essence}を表しています。この数字は人生の根本的な方向性として、潜在意識レベルであなたを導く重要な指針となります。日常の選択や判断において、この数字のエネルギーが自然と働き、より深い目的意識を持った人生へと導いてくれます。人生の重要な局面で、この指針に立ち返ることで迷いが晴れ、本来歩むべき道が見えてくるでしょう。
+### 🌌 宇宙からのメッセージらしきもの
+えーっと、全体指針ナンバー${numerologyData.higherPurposeNumber}「${interpretations.higherPurpose.title}」ってことはですね...宇宙の井戸端会議で小耳に挟んだんですけど、あなたの魂、どうやら${interpretations.higherPurpose.essence}系の設計図で作られてるっぽいです！なんか宇宙の製造ラインで「この子はこのタイプね〜」って天使がポチッとボタン押したみたいな？まあ要するに、あなたの深〜いところには、この数字のエネルギーがギュンギュン流れてるってわけです。迷ったら、この数字に聞いてみるといいかも？
 
-### 🌸 現実での実践バランス
-メインナンバー${numerologyData.mainNumber}「${interpretations.main.title}」を中心として、ルーツナンバー${numerologyData.pastNumber}「${interpretations.past.title}」が安定した基盤を提供し、グロースナンバー${numerologyData.futureNumber}「${interpretations.future.title}」が成長のための栄養となります。ナチュラルナンバー${numerologyData.spiritNumber}「${interpretations.spirit.title}」は意識しなくても自然と現れるあなたらしさです。これら4つの数字は互いに補完し合い、バランスの取れた人生の実践を可能にします。日々の中でこれらの要素を意識的に活用することで、より充実した毎日を送ることができるでしょう。
+### 🎪 人生という名のサーカス
+はい、あなたの人生サーカス団のご紹介〜！まず座長はメインナンバー${numerologyData.mainNumber}「${interpretations.main.title}」さん。華やかにスポットライト浴びてます✨ そして土台でガッチリ支えるのがルーツナンバー${numerologyData.pastNumber}「${interpretations.past.title}」、まるで怪力男！グロースナンバー${numerologyData.futureNumber}「${interpretations.future.title}」は栄養ドリンク配りまくる係。で、ナチュラルナンバー${numerologyData.spiritNumber}「${interpretations.spirit.title}」は...なんか勝手に客席盛り上げてる感じ？この4人組、なかなかいいチームワークで人生という舞台を盛り上げてくれそうですよ〜！
 
-### 🎯 最終的な到達方向
-最終目的ナンバー${numerologyData.higherGoalNumber}「${interpretations.higherGoal.title}」は、${interpretations.higherGoal.essence}という方向性を示しています。人生の様々な経験を積み重ねる中で、自然とこの要素の方向性へ向かっていく成長の道筋が描かれています。現在の学びや挑戦が、将来のこの到達点に向けた大切なステップとなっています。焦らず着実に歩みを進めることで、最終的にはこの数字が示す豊かな境地に辿り着くことができるでしょう。
+### 🚀 最終目的地はたぶんこのへん
+宇宙旅行ガイドブック（第${numerologyData.higherGoalNumber}版）によるとですね、あなたの最終到着地は「${interpretations.higherGoal.title}」駅みたいです。${interpretations.higherGoal.essence}的な景色が広がってるらしいですよ〜。今はまだ出発したばかりかもしれないけど、人生という名の宇宙船に乗って、ゆらゆら〜っと進んでいけば、いつの間にか着いちゃうんだって。途中で宇宙人に会ったり、隕石かわしたりするかもだけど、それも旅の醍醐味ってことで！最終的にはきっと「あー、ここが私の場所だったのね」って思える場所に着陸するはず🛸
 
-### 🌟 統合的な人生設計図
-これらの数字は全体として、潜在的な方向性を自覚し、実生活での実践を重ね、より高次の目的へと成長していく、人生そのものの螺旋的な成長プロセスを描いています。${numerologyData.cosmicRhythm ? `宇宙のリズムエネルギー${numerologyData.cosmicRhythm.number}「${numerologyData.cosmicRhythm.focus}」を起点として、` : ''}あなた独自の369リズムが、調和のとれた人生の展開を支援し、内なる成長と外への貢献の両方を実現していきます。この数字の組み合わせは、あなたが本来持っている可能性を最大限に引き出し、意味深い人生を歩むためのロードマップとなってくれるでしょう。`
+### 🎭 人生の脚本、誰が書いたの？
+なんかこの数字の組み合わせ、誰かが夜中にコーヒー飲みながら書いた壮大な脚本みたいじゃないですか？${numerologyData.cosmicRhythm ? `BGMは宇宙のリズム${numerologyData.cosmicRhythm.number}番「${numerologyData.cosmicRhythm.focus}」。ドゥンドゥン♪って感じで流れてます。` : ''}潜在意識から始まって、現実でドタバタして、最後は高次元にたどり着く...まるで螺旋階段を登るようなストーリー展開！途中で「えっ、この展開マジ？」って思うこともあるかもだけど、それも含めて369のリズムに乗っかってるんですって。人生の脚本家、なかなかセンスあるじゃん？`
 }
 
 export async function POST(request: NextRequest) {
